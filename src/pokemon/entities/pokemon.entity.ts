@@ -4,7 +4,7 @@ import { Document } from 'mongoose';
 export type PokemonDocument = Pokemon & Document;
 
 @Schema()
-export class Pokemon {
+export class Pokemon extends Document {
   @Prop({
     unique: true,
     index: true,
